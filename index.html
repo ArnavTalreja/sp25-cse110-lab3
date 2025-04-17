@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Timer First Brainstorm - Meeting Minutes</title>
+  <meta name="description" content="Meeting minutes for the Pomodoro Timer brainstorm session held on April 16, 2025.">
+  <link rel="icon" href="images/The_Pomodoro_timer_in_Vivaldi_browser-980x551.png.webp" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+    <h1>Pomodoro Timer First Brainstorm</h1>
+    <h2>Topic: <em>Brainstorming</em></h2>
+    <h3>Date: April 16, 2025</h3>
+    <nav>
+      <ul>
+        <li><a href="#attendance">Attendance</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#unfinished">Unfinished Business</a></li>
+        <li><a href="#new">New Business</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#form">Feedback Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="attendance">
+      <h2>Attendance</h2>
+      <ul>
+        <li>Arnav Talreja</li>
+        <li><strong>Jane Doe</strong></li>
+        <li>John Smith</li>
+        <li>Alice Johnson</li>
+      </ul>
+    </section>
+
+    <section id="agenda">
+      <h2>Agenda</h2>
+      <ol>
+        <li>Discuss <i>initial ideas</i> for the timer</li>
+        <li>Assign research tasks</li>
+        <li>Define MVP scope</li>
+      </ol>
+    </section>
+
+    <section id="unfinished">
+      <h2>Unfinished Business</h2>
+      <ul>
+        <li>Finalize decision on timer duration</li>
+        <li>Review feedback from previous prototype</li>
+      </ul>
+    </section>
+
+    <section id="new">
+      <h2>New Business</h2>
+      <ul>
+        <li>Explore integration with calendar apps</li>
+        <li>Assign UI/UX responsibilities</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Miscellaneous Notes</h2>
+      <p><b>John</b> suggested a collaborative mode feature. Jane will <em>reach out</em> to the TA.</p>
+      <hr>
+      <p><span>This paragraph uses a span to show inline semantics — it’s not useful without styling but included per lab requirements.</span></p>
+    </section>
+
+    <section id="media">
+      <h2>Whiteboard Diagrams</h2>
+      <figure>
+        <img src="images/freeForm.jpg" alt="System architecture diagram" width="600">
+        <figcaption>Initial architecture sketch from brainstorming session</figcaption>
+      </figure>
+      <figure>
+        <img src="images/freeForm.jpg" alt="UI mockup whiteboard photo" width="600">
+        <figcaption>UI flow mockup drawn on whiteboard</figcaption>
+      </figure>
+
+      <h3>Meeting Audio</h3>
+      <audio controls>
+        <source src="media/Small Audience Chatter  Talking Sound Effect.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Meeting Video</h3>
+      <video width="640" controls>
+        <source src="media/What We Do _ Meeting Rooms.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <section>
+      <h2>Extra Notes</h2>
+      <details>
+        <summary>Click to expand technical notes</summary>
+        <p>Our timer will use a recursive function to keep track of 25-minute intervals.</p>
+        <pre><code>function pomodoro() {
+  setTimeout(pomodoro, 1500000);
+}</code></pre>
+      </details>
+    </section>
+
+    <section id="form">
+      <h2>Feedback Form</h2>
+      <form>
+        <fieldset>
+          <legend>Meeting Feedback</legend>
+
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br><br>
+
+          <label for="date">Date of Meeting:</label><br>
+          <input type="date" id="date" name="meeting-date"><br><br>
+
+          <p>Which parts of the meeting did you find helpful?</p>
+          <input type="checkbox" id="agenda" name="helpful" value="Agenda">
+          <label for="agenda">Agenda</label><br>
+          <input type="checkbox" id="discussion" name="helpful" value="Discussion">
+          <label for="discussion">Discussion</label><br><br>
+
+          <p>Overall clarity of meeting:</p>
+          <input type="radio" id="clear" name="clarity" value="clear">
+          <label for="clear">Clear</label><br>
+          <input type="radio" id="unclear" name="clarity" value="unclear">
+          <label for="unclear">Unclear</label><br><br>
+
+          <label for="favorite">Favorite Topic:</label>
+          <input list="topics" id="favorite" name="favorite-topic">
+          <datalist id="topics">
+            <option value="Timer Duration">
+            <option value="Calendar Integration">
+            <option value="UI Mockups">
+          </datalist><br><br>
+
+          <label for="comments">Additional Comments:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+          <label for="rating">Rate the meeting:</label>
+          <select id="rating" name="rating">
+            <option value="great">Great</option>
+            <option value="okay">Okay</option>
+            <option value="poor">Poor</option>
+          </select><br><br>
+
+          <button type="submit">Submit Feedback</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pomodoro Team — <a href="mailto:team@pomodoro.com">Contact Us</a></p>
+    <br>
+  </footer>
+
+</body>
+</html>
